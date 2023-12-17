@@ -1,0 +1,22 @@
+{
+  "name": "beyond-blocks",
+  "version": "1.0.0",
+  "description": "A sample created on Beyond Blocks workshop by Kerala Blockchain Academy",
+  "author": "Abhinand Arun",
+  "license": "ISC",
+  "scripts": {
+    "build": "turbo build",
+    "dev": "turbo dev",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "turbo": "^1.11.2"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "packageManager": "npm@10.2.5",
+  "workspaces": [
+    "apps/*"
+  ]
+}
