@@ -5,21 +5,21 @@ const router = Router();
 let info;
 
 router.get("/", function (req, res) {
-    res.send("Hello World");
+  res.send("Hello World");
 });
 
 router.post("/create", async function (req, res) {
-    const data = req.body;
-    info = data.inputMsg;
+  const data = req.body;
+  info = data.inputMsg;
 
-    const txn = await instance.store(info);
+  const txn = await instance.store(info);
 
-    res.status(201).json({ Success: info, transaction: txn });
+  res.status(201).json({ Success: info, transaction: txn });
 });
 
 router.get("/read", async function (req, res) {
-    const data = await instance.retrieve();
-    res.json(data);
+  const data = await instance.retrieve();
+  res.json(data);
 });
 
 export default router;

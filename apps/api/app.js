@@ -1,4 +1,4 @@
-import { Contract, JsonRpcProvider, Wallet} from "ethers";
+import { Contract, JsonRpcProvider, Wallet } from "ethers";
 import details from "./detail.json" assert { type: "json" };
 import dotenv from "dotenv";
 

@@ -1,12 +1,13 @@
 {
-  "name": "behind-blocks",
+  "name": "api",
   "version": "1.0.0",
   "type": "module",
   "description": "A sample express api application",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon index.js"
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Abhinand Arun",
   "license": "ISC",
